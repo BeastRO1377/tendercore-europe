@@ -1,0 +1,166 @@
+/*
+ TenderCore design system v1.0 (v0.4.1).
+ Product-wide visual contract: one 4px rhythm, one form control size,
+ one label baseline, one checkbox size, one button size, one focus style.
+ Keep page-specific layout in styles.css. Add new shared component rules here.
+*/
+:root {
+  --ds-unit: 4px;
+  --ds-control-height: 40px;
+  --ds-control-radius: 8px;
+  --ds-checkbox-size: 18px;
+  --ds-font-size: 13px;
+  --ds-line-height: 20px;
+  --ds-label-size: 12px;
+  --ds-label-height: 20px;
+  --ds-gap: 8px;
+  --ds-space-section: 24px;
+  --ds-focus-ring: 0 0 0 3px rgba(20,138,153,.18);
+}
+html {scrollbar-gutter: stable;}
+body, button, input, select, textarea {font-family: Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;}
+body {font-size:var(--ds-font-size);line-height:var(--ds-line-height);}
+button, input, select, textarea {letter-spacing:normal;}
+/* Text forms a consistent 4px baseline rhythm. Components use full line boxes. */
+.pageheading h1 {font-size:30px;line-height:36px;letter-spacing:-.8px;}
+.section-heading h2,.panel h2 {line-height:28px;}
+.pageheading p,.section-heading p,.hint,.tax-v04-top .hint {line-height:20px;}
+.topbar {min-height:68px;}
+.breadcrumbs {line-height:20px;min-width:0;}
+.breadcrumbs b {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.top-controls {gap:8px;min-width:0;}
+/* A button is 40px high everywhere, including small cards and dialogs.
+   Only icon-only buttons have a square footprint. */
+button.btn, a.btn, .bid-form button.btn,
+.tax-v04-top .tax-heading .btn,.drawer-actions .btn,.cardfoot .btn,
+button.text-button,.view-segment button,.close,
+button.navlink {box-sizing:border-box;min-height:var(--ds-control-height);height:var(--ds-control-height);
+  display:inline-flex;align-items:center;justify-content:center;
+  line-height:var(--ds-line-height);font-size:var(--ds-label-size);vertical-align:middle;}
+button.btn,a.btn,.drawer-actions a.btn {padding:0 16px;gap:8px;border-radius:var(--ds-control-radius);}
+button.btn.tiny {padding:0 12px;min-height:var(--ds-control-height);height:var(--ds-control-height);}
+button.text-button {padding:0 8px;white-space:nowrap;}
+button.navlink {justify-content:flex-start;padding:0 12px;gap:12px;}
+.view-segment {padding:0;gap:0;overflow:hidden;min-height:var(--ds-control-height);border-radius:var(--ds-control-radius);}
+.view-segment button {width:var(--ds-control-height);min-width:var(--ds-control-height);height:var(--ds-control-height);padding:0;border-radius:6px;}
+.close {width:var(--ds-control-height);min-width:var(--ds-control-height);padding:0;}
+/* Shared input/select contract across filters, settings, analytics, tax and drawer. */
+.app input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+.app select,.app .detail-section select,.app .detail-section input,
+.app .tax-v04-top input,.app .tax-v04-top select {
+  box-sizing:border-box;display:block;width:100%;min-width:0;
+  min-height:var(--ds-control-height);height:var(--ds-control-height);
+  padding:0 12px;background:var(--field);color:var(--text);
+  border:1px solid var(--border);border-radius:var(--ds-control-radius);
+  font-size:var(--ds-font-size);line-height:var(--ds-line-height);
+  box-shadow:none;outline:none;
+}
+.app .top-controls select {width:auto;min-width:108px;font-size:var(--ds-label-size);padding:0 28px 0 12px;}
+.app .top-controls #language {min-width:120px;}
+.app .top-controls #theme {min-width:128px;}
+.app .filters-bottom select {width:160px;}
+.app textarea,.app .detail-section textarea,.app .tax-v04-top textarea {
+  width:100%;height:auto;min-height:80px;resize:vertical;
+  padding:10px 12px;border-radius:var(--ds-control-radius);
+  border:1px solid var(--border);background:var(--field);color:var(--text);
+  font-size:var(--ds-font-size);line-height:var(--ds-line-height);
+}
+.app .search-field span {top:50%;transform:translateY(-50%);left:12px;line-height:20px;font-size:20px;pointer-events:none;}
+.app .search-field input {padding-left:40px;}
+/* Labels in a grid reserve two standard line boxes; last lines align to the same baseline
+   even if another column's label wraps to two lines. */
+.app .stack label,.app .bid-form label,.app .tax-v04-top label,
+.app .detail-section label {min-width:0;gap:8px;font-size:var(--ds-label-size);line-height:var(--ds-label-height);}
+.app .form-grid label,.app .bid-form label {display:flex;flex-direction:column;justify-content:flex-end;}
+.app .form-grid label > span,.app .bid-form label > span {
+  display:flex;align-items:flex-end;min-height:40px;
+  line-height:var(--ds-label-height);font-size:var(--ds-label-size);
+}
+.app .tax-v04-top .form-grid label > span {min-height:40px;}
+.app .stack label > span {line-height:var(--ds-label-height);}
+.app .form-grid {gap:16px;align-items:end;}
+.app .filters {gap:8px;align-items:center;}
+.app .filters-bottom {gap:12px;min-height:56px;flex-wrap:wrap;}
+/* One 18px indicator and a 40px target area for ALL checkboxes. */
+.app input[type="checkbox"],.app .country-pill input[type="checkbox"],.app .toggle-row input[type="checkbox"] {
+  width:var(--ds-checkbox-size);min-width:var(--ds-checkbox-size);
+  height:var(--ds-checkbox-size);min-height:var(--ds-checkbox-size);
+  padding:0;margin:0;flex:none;accent-color:var(--teal);cursor:pointer;
+}
+.app .small-check,.app .country-pill,.app .toggle-row {gap:8px;align-items:center;line-height:var(--ds-line-height);}
+.app .small-check,.app .country-pill {min-height:var(--ds-control-height);}
+.app .country-pill {padding:8px;}
+.app .country-choices {align-items:center;min-height:var(--ds-control-height);margin-top:8px;gap:8px;flex-wrap:wrap;}
+.app .toggle-row {min-height:56px;}
+.app .toggle-row input {height:var(--ds-checkbox-size);}
+.app :is(button,input,select,textarea,a):focus-visible {outline:2px solid var(--teal);outline-offset:2px;box-shadow:var(--ds-focus-ring);}
+.app :is(button,input,select,textarea):disabled {cursor:not-allowed;opacity:.6;}
+.app .metric {line-height:20px;}
+.app .metric strong {line-height:40px;}
+.app .tender-card h3 {line-height:20px;min-height:40px;}
+.app .cardfoot {align-items:center;}
+.app .drawer-actions {align-items:center;flex-wrap:wrap;}
+/* Mobile navigation: accessible off-canvas drawer instead of hidden navigation. */
+.mobile-menu-toggle {display:none!important;}
+.mobile-nav-backdrop {display:none;}
+.sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+@media (max-width:970px) and (min-width:661px) {
+ .app button.navlink {justify-content:center;padding:0;}
+}
+@media (max-width:660px) {
+ html {scrollbar-gutter:auto;}
+ .app .sidebar {display:flex;position:fixed;top:0;left:0;bottom:0;z-index:102;
+  width:min(290px,84vw);height:100dvh;padding:24px 15px;
+  transform:translateX(-110%);visibility:hidden;pointer-events:none;
+  transition:transform .2s ease,visibility .2s;box-shadow:10px 0 32px rgba(0,0,0,.15);}
+ .app.nav-open .sidebar {transform:translateX(0);visibility:visible;pointer-events:auto;}
+ .app .sidebar .logo {padding:0 13px 24px;}
+ .app .sidebar .logo>div:last-child,.app .sidebar .workspace,.app .sidebar .nav-label,.app .sidebar .navlink span:not(.nav-icon),.app .sidebar .side-bottom {display:initial;}
+ .app .sidebar .workspace {display:flex;margin-bottom:24px;}
+ .app .sidebar .navigation {display:grid;}
+ .app .sidebar .navlink {justify-content:flex-start;padding:0 12px;}
+ .app .sidebar .navlink span:not(.nav-icon) {display:inline;}
+ .app .sidebar .side-bottom {display:block;}
+ .mobile-menu-toggle {display:inline-flex!important;width:var(--ds-control-height);min-width:var(--ds-control-height);padding:0!important;}
+ .mobile-nav-backdrop:not([hidden]) {display:block;position:fixed;inset:0;background:rgba(7,19,31,.55);z-index:101;}
+ body.mobile-nav-open {overflow:hidden;}
+ .app .topbar {flex-wrap:wrap;justify-content:flex-start;gap:8px;padding:12px 16px;}
+ .app .breadcrumbs {flex:1;min-width:0;}
+ .app .top-controls {width:100%;justify-content:flex-end;}
+ .app .top-controls select {width:auto;min-width:0;}
+ .app .filters-bottom {align-items:center;}
+ .app .form-grid {grid-template-columns:1fr;}
+ .app .pageheading h1 {font-size:26px;line-height:32px;}
+ .app .tax-v04-top .tax-heading {display:flex;flex-wrap:wrap;align-items:center;}
+ .app .tax-v04-top .tax-heading button {margin-top:0;}
+ .app .drawer-actions .btn {flex:1 1 auto;}
+ .app .bid-form {grid-template-columns:1fr;}
+ .app .footer {padding:20px 16px;}
+}
+@media (max-width:410px){
+ .app .filters{grid-template-columns:1fr;}
+ .app .filters .search-field,.app .filters select:last-child {grid-column:auto;}
+ .app .top-controls select {font-size:11px;}
+ .app .page-actions {display:grid;grid-template-columns:1fr 1fr;}
+ .app .page-actions .btn:last-child {grid-column:1/-1;}
+ .app .country-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+ .app .metric-grid {grid-template-columns:1fr 1fr;}
+}
+@media(prefers-reduced-motion:reduce){.app .sidebar{transition:none;}}
+/* TED eForms detail sections share existing design tokens / control sizing. */
+.card-source-status{font-size:12px;color:var(--muted,#737984);line-height:20px;margin:4px 0 8px}
+.lot-details{padding:12px;margin:12px 0;border:1px solid var(--line,#d9dee6);border-radius:8px;line-height:20px}
+.lot-details summary{font-weight:650;cursor:pointer;line-height:20px}
+.lot-details h4{font-size:13px;line-height:20px;margin:12px 0 4px}
+.source-paragraph,.requirements-list{font-size:13px;line-height:20px;margin:8px 0;overflow-wrap:anywhere}
+.requirements-list li{margin-bottom:8px}
+.source-links{display:flex;flex-wrap:wrap;gap:8px}
+.source-link{color:var(--accent,#3278bd);font-size:13px;line-height:20px;overflow-wrap:anywhere}
+.list-mode .card-source-status{display:none}
+@media (max-width:360px){
+ .app .page-actions{grid-template-columns:minmax(0,1fr)}
+ .app .page-actions .btn:last-child{grid-column:auto}
+ .app .page-actions .btn{min-width:0;max-width:100%}
+}
+.card-scope{font-size:12px;line-height:20px;color:var(--muted);margin:0;max-height:40px;overflow:hidden;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.list-mode .card-scope{display:none}

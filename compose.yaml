@@ -1,0 +1,16 @@
+services:
+  tendercore:
+    build: .
+    restart: unless-stopped
+    # Localhost only: NO authentication or multi-tenant isolation in this alpha.
+    ports:
+      - "127.0.0.1:8766:8766"
+    volumes:
+      - tendercore_data:/app/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  tendercore_data:

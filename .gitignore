@@ -1,0 +1,28 @@
+# Local installations and private operational data
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.log
+.DS_Store
+# Data, working outputs and machine-specific reports
+data/*
+!data/.gitkeep
+out/
+coverage/
+htmlcov/
+*.zip
+# local build artifacts
+build/
+dist/
+*.egg-info/
