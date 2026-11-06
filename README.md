@@ -3,7 +3,7 @@
 **Open-source, self-hosted European public-tender discovery and preliminary eligibility assessment.**  
 **Status: `v0.1.0-alpha`** — experimental release based on internal TenderCore Europe MVP v0.4.2. Not production-ready.
 
-![TenderCore Europe Community interface, offline empty state](docs/screenshots/dashboard.png)
+![TenderCore Europe Community dashboard, synthetic demo notices](docs/screenshots/dashboard.png)
 
 TenderCore Europe helps suppliers explore public tenders published in [Tenders Electronic Daily (TED)](https://ted.europa.eu/), inspect tender and lot information, flag potentially restrictive financial terms, and track their own participation decisions.
 
@@ -51,9 +51,21 @@ The Compose configuration binds the service to **127.0.0.1 only** and persists l
 
 ## Screenshots
 
-Screenshots show the interface only, not validated TED results.
+Screenshots are generated against the local FastAPI API using **synthetic demo notices**, not actual TED opportunities. They are tested for browser errors before being saved.
 
-![Criteria settings, offline empty state](docs/screenshots/settings.png)
+![Criteria settings, demo profile](docs/screenshots/settings.png)
+
+![Dashboard in dark mode, demo notices](docs/screenshots/dashboard-dark.png)
+
+To regenerate verified screenshots:
+
+```bash
+python -m pip install -r requirements-dev.txt
+python -m playwright install chromium
+python scripts/capture_screenshots.py
+```
+
+Do not capture a raw `file://` or `about:blank` HTML preview without its API: relative `/api/...` requests will fail. The screenshot script uses an in-process FastAPI test client and avoids real TED requests.
 
 ## Development
 
