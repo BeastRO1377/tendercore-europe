@@ -9,8 +9,7 @@ Reference: https://docs.drips.network/get-support/claim-your-repository/
 - [x] Project profile prepared: [DRIPS_PROJECT_PROFILE.md](DRIPS_PROJECT_PROFILE.md)
 - [x] Public Ethereum wallet designated by the maintainer: `0x7e05dc11549F2d8A1AFe8D15e900466053e87F79` (EIP-55 checksum verified; wallet control still requires confirmation in Drips)
 - [ ] Connect that wallet in the official Drips App
-- [x] Create and validate the real `FUNDING.json` in this PR branch
-- [ ] Merge this PR so `FUNDING.json` exists at the **root of the default branch**
+- [x] Create and validate the real `FUNDING.json` at the **root of `main`** (merged PR #1)
 - [ ] Complete Drips on-chain project claim
 - [ ] Set recipient split(s), if any, and public project presentation
 - [ ] Confirm claimed project link and optionally add it to GitHub sponsor links
