@@ -61,9 +61,9 @@ Open Source; Public Procurement; Digital Public Goods; SMEs; Transparency; Civic
 ## Ownership and registration status
 
 - Maintainer: individual developer (no company or team implied).
-- Current funding configuration: **not configured**.
+- Funding ownership file: **configured in `FUNDING.json`**; must be merged into the default branch to be verified by Drips.
 - Drips ownership claim: **not completed**.
-- Wallet: **not provided**; never publish a guessed address.
+- Designated public Ethereum owner wallet: `0x7e05dc11549F2d8A1AFe8D15e900466053e87F79` (EIP-55 checksum verified). The maintainer must connect and prove control of this wallet.
 - Drips project URL: **to be confirmed after claim**.
 
 This draft is an informational preparation document, not a donation solicitation currently live on Drips.
