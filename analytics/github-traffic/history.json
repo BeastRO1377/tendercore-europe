@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "repository": "BeastRO1377/tendercore-europe",
+  "daily": {
+    "2026-11-09": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 2,
+      "views": 6
+    },
+    "2026-11-10": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 1,
+      "views": 4
+    },
+    "2026-11-11": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 1,
+      "views": 15
+    },
+    "2026-11-12": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 0,
+      "views": 0
+    },
+    "2026-11-13": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 0,
+      "views": 0
+    },
+    "2026-11-14": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 1,
+      "views": 10
+    },
+    "2026-11-15": {
+      "clones": 1,
+      "unique_cloners": 1,
+      "unique_visitors": 1,
+      "views": 13
+    },
+    "2026-11-16": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 1,
+      "views": 2
+    },
+    "2026-11-17": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 0,
+      "views": 0
+    },
+    "2026-11-18": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 0,
+      "views": 0
+    },
+    "2026-11-19": {
+      "clones": 0,
+      "unique_cloners": 0,
+      "unique_visitors": 1,
+      "views": 3
+    },
+    "2026-11-20": {
+      "clones": 61,
+      "unique_cloners": 14,
+      "unique_visitors": 1,
+      "views": 17,
+      "workflow_runs": 13
+    },
+    "2026-11-21": {
+      "clones": 2,
+      "unique_cloners": 2,
+      "unique_visitors": 1,
+      "views": 20
+    },
+    "2026-11-22": {
+      "clones": 14,
+      "unique_cloners": 8,
+      "unique_visitors": 0,
+      "views": 0,
+      "workflow_runs": 0
+    }
+  },
+  "snapshots": {
+    "2026-11-23": {
+      "captured_at_utc": null,
+      "clones_14d": {
+        "count": 81,
+        "uniques": 27
+      },
+      "popular_paths_14d": [
+        {
+          "path": "/BeastRO1377/tendercore-europe",
+          "title": "Overview",
+          "count": 30,
+          "uniques": 2
+        },
+        {
+          "path": "/BeastRO1377/tendercore-europe/pulse",
+          "title": "/pulse",
+          "count": 9,
+          "uniques": 1
+        },
+        {
+          "path": "/BeastRO1377/tendercore-europe/community",
+          "title": "/community",
+          "count": 7,
+          "uniques": 1
+        },
+        {
+          "path": "/BeastRO1377/tendercore-europe/graphs/traffic",
+          "title": "/graphs/traffic",
+          "count": 6,
+          "uniques": 1
+        },
+        {
+          "path": "/BeastRO1377/tendercore-europe/graphs/contributors",
+          "title": "/graphs/contributors",
+          "count": 5,
+          "uniques": 1
+        },
+        {
+          "path": "/BeastRO1377/tendercore-europe/actions/metrics/usage",
+          "title": "/actions/metrics/usage",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/BeastRO1377/tendercore-europe/graphs/community",
+          "title": "/graphs/community",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/BeastRO1377/tendercore-europe/actions/metrics/performance",
+          "title": "/actions/metrics/performance",
+          "count": 3,
+          "uniques": 1
+        },
+        {
+          "path": "/BeastRO1377/tendercore-europe/forks",
+          "title": "/forks",
+          "count": 3,
+          "uniques": 1
+        },
+        {
+          "path": "/BeastRO1377/tendercore-europe/graphs/code-frequency",
+          "title": "/graphs/code-frequency",
+          "count": 3,
+          "uniques": 1
+        }
+      ],
+      "referrers_14d": [
+        {
+          "referrer": "github.com",
+          "count": 22,
+          "uniques": 1
+        },
+        {
+          "referrer": "linkedin.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "source": "owner_manual_export_2026-11-23 (exact UTC capture time unknown)",
+      "views_14d": {
+        "count": 90,
+        "uniques": 2
+      }
+    }
+  }
+}

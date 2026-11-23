@@ -1,0 +1,40 @@
+name: GitHub Traffic History
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: github-traffic-history
+  cancel-in-progress: false
+jobs:
+  collect:
+    if: github.ref == 'refs/heads/main' && github.repository == 'BeastRO1377/tendercore-europe'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Validate traffic token configuration
+        env:
+          GH_TRAFFIC_TOKEN: ${{ secrets.GH_TRAFFIC_TOKEN }}
+        run: |
+          if [[ -z "$GH_TRAFFIC_TOKEN" ]]; then
+            echo "Missing GH_TRAFFIC_TOKEN. Set fine-grained PAT with Administration: read for this repository."
+            exit 1
+          fi
+      - name: Download versioned collector without cloning repository
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          curl --fail --silent --show-error --location --retry 3 \
+            "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${SOURCE_SHA}/scripts/github_traffic.py" \
+            --output /tmp/tendercore_github_traffic.py
+      - name: Collect traffic, persist history and refresh public report
+        env:
+          GH_TRAFFIC_TOKEN: ${{ secrets.GH_TRAFFIC_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python /tmp/tendercore_github_traffic.py collect \
+            --repo "$GITHUB_REPOSITORY" \
+            --github-store --branch main --days 30
