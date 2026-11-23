@@ -9,6 +9,12 @@ TenderCore Europe helps suppliers explore public tenders published in [Tenders E
 
 **It does not determine legal eligibility, guarantee absence of bid/performance security, calculate authoritative EU-wide taxes or predict winning odds.** Missing information is displayed as **unknown** or **requires review**, never as a confirmed zero cost.
 
+## Public mission and development evidence
+
+TenderCore Europe is an independent, fully open-source civic technology initiative maintained by its individual founder and developer. Its mission is to make European public procurement more accessible to small and medium-sized enterprises (SMEs) by reducing informational and technological barriers. The software is available under Apache-2.0 without a software license fee.
+
+See [public benefit, development milestones and impact measurement](docs/IMPACT.md) for verifiable progress, demonstration materials and current limitations. Public repository activity is not presented as evidence of actual SME adoption.
+
 ## Features
 
 - TED Search API v3 connector and eForms XML enrichment by lot (requires live verification).
