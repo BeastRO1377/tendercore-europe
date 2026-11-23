@@ -15,6 +15,12 @@ TenderCore Europe is an independent, fully open-source civic technology initiati
 
 See [public benefit, development milestones and impact measurement](docs/IMPACT.md) for verifiable progress, demonstration materials and current limitations. Public repository activity is not presented as evidence of actual SME adoption.
 
+## Support TenderCore Europe on Giveth
+
+This repository is the official source of TenderCore Europe. The project's official fundraising page is [TenderCore Europe on Giveth](https://www.giveth.io/project/tendercore-europe).
+
+Voluntary contributions support continued open-source development, procurement data integrations, independent security audits, specialist expertise, development tools and sustainable maintenance. The project is fully open-source under Apache-2.0; donations are not required to access or self-host the software.
+
 ## Features
 
 - TED Search API v3 connector and eForms XML enrichment by lot (requires live verification).
