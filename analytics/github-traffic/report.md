@@ -1,30 +1,33 @@
 # TenderCore Europe — GitHub Traffic History
 
-Latest snapshot: **2026-11-23** (UTC). Reporting interval: **2026-10-25–2026-11-23**.
+Latest snapshot: **2026-11-24** (UTC). Reporting interval: **2026-10-26–2026-11-24**.
 
-- Recorded page views over 30 calendar days: **90**.
-- Recorded full clones over 30 calendar days: **81**.
-- Days with traffic observations: **14** (missing dates are not zero).
-- Peak clone day: **2026-11-20** with **61** clones.
-- Latest rolling 14-day unique visitors: **2**.
-- Latest rolling 14-day unique cloners: **27**.
+- Recorded page views over 30 calendar days: **104**.
+- Recorded full clones over 30 calendar days: **152**.
+- Days with traffic observations: **15** (missing dates are not zero).
+- Peak clone day: **2026-11-23** with **71** clones.
+- Latest rolling 14-day unique visitors: **1**.
+- Latest rolling 14-day unique cloners: **42**.
+- Repository stars at snapshot: **0**; forks: **0**.
 
 ## Observations by UTC day
 
 | Date | Views | Daily unique visitors | Full clones | Daily unique cloners | Other Actions runs |
 |---|---:|---:|---:|---:|---:|
+| 2026-11-24 | — | — | — | — | 0 |
+| 2026-11-23 | 14 | 1 | 71 | 16 | 12 |
 | 2026-11-22 | 0 | 0 | 14 | 8 | 0 |
-| 2026-11-21 | 20 | 1 | 2 | 2 | — |
+| 2026-11-21 | 20 | 1 | 2 | 2 | 0 |
 | 2026-11-20 | 17 | 1 | 61 | 14 | 13 |
-| 2026-11-19 | 3 | 1 | 0 | 0 | — |
-| 2026-11-18 | 0 | 0 | 0 | 0 | — |
-| 2026-11-17 | 0 | 0 | 0 | 0 | — |
-| 2026-11-16 | 2 | 1 | 0 | 0 | — |
-| 2026-11-15 | 13 | 1 | 1 | 1 | — |
-| 2026-11-14 | 10 | 1 | 2 | 2 | — |
-| 2026-11-13 | 0 | 0 | 0 | 0 | — |
-| 2026-11-12 | 0 | 0 | 1 | 1 | — |
-| 2026-11-11 | 15 | 1 | 0 | 0 | — |
+| 2026-11-19 | 3 | 1 | 0 | 0 | 0 |
+| 2026-11-18 | 0 | 0 | 0 | 0 | 0 |
+| 2026-11-17 | 0 | 0 | 0 | 0 | 0 |
+| 2026-11-16 | 2 | 1 | 0 | 0 | 0 |
+| 2026-11-15 | 13 | 1 | 1 | 1 | 0 |
+| 2026-11-14 | 10 | 1 | 2 | 2 | 0 |
+| 2026-11-13 | 0 | 0 | 0 | 0 | 0 |
+| 2026-11-12 | 0 | 0 | 1 | 1 | 0 |
+| 2026-11-11 | 15 | 1 | 0 | 0 | 0 |
 | 2026-11-10 | 4 | 1 | 0 | 0 | — |
 | 2026-11-09 | 6 | 2 | 0 | 0 | — |
 
@@ -32,8 +35,7 @@ Latest snapshot: **2026-11-23** (UTC). Reporting interval: **2026-10-25–2026-1
 
 | Referrer | Views | Unique visitors |
 |---|---:|---:|
-| github.com | 22 | 1 |
-| linkedin.com | 1 | 1 |
+| github.com | 21 | 1 |
 
 ## Interpretation and limitations
 
