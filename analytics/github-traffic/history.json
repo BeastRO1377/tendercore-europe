@@ -104,6 +104,13 @@
       "workflow_runs": 12
     },
     "2026-11-24": {
+      "clones": 88,
+      "unique_cloners": 42,
+      "unique_visitors": 2,
+      "views": 10,
+      "workflow_runs": 0
+    },
+    "2026-11-25": {
       "workflow_runs": 0
     }
   },
@@ -276,6 +283,88 @@
       "views_14d": {
         "count": 98,
         "uniques": 1
+      }
+    },
+    "2026-11-25": {
+      "captured_at_utc": "2026-11-25T12:57:18Z",
+      "clones_14d": {
+        "count": 240,
+        "uniques": 81
+      },
+      "forks": 0,
+      "popular_paths_14d": [
+        {
+          "count": 26,
+          "path": "/BeastRO1377/tendercore-europe",
+          "title": "Overview",
+          "uniques": 2
+        },
+        {
+          "count": 12,
+          "path": "/BeastRO1377/tendercore-europe/pulse",
+          "title": "/pulse",
+          "uniques": 1
+        },
+        {
+          "count": 10,
+          "path": "/BeastRO1377/tendercore-europe/graphs/traffic",
+          "title": "/graphs/traffic",
+          "uniques": 1
+        },
+        {
+          "count": 7,
+          "path": "/BeastRO1377/tendercore-europe/community",
+          "title": "/community",
+          "uniques": 1
+        },
+        {
+          "count": 5,
+          "path": "/BeastRO1377/tendercore-europe/graphs/contributors",
+          "title": "/graphs/contributors",
+          "uniques": 1
+        },
+        {
+          "count": 4,
+          "path": "/BeastRO1377/tendercore-europe/actions/metrics/usage",
+          "title": "/actions/metrics/usage",
+          "uniques": 1
+        },
+        {
+          "count": 4,
+          "path": "/BeastRO1377/tendercore-europe/graphs/community",
+          "title": "/graphs/community",
+          "uniques": 1
+        },
+        {
+          "count": 3,
+          "path": "/BeastRO1377/tendercore-europe/actions/metrics/performance",
+          "title": "/actions/metrics/performance",
+          "uniques": 1
+        },
+        {
+          "count": 3,
+          "path": "/BeastRO1377/tendercore-europe/actions/runs/45406567431",
+          "title": "/actions/runs/45406567431",
+          "uniques": 1
+        },
+        {
+          "count": 3,
+          "path": "/BeastRO1377/tendercore-europe/forks",
+          "title": "/forks",
+          "uniques": 1
+        }
+      ],
+      "referrers_14d": [
+        {
+          "count": 18,
+          "referrer": "github.com",
+          "uniques": 1
+        }
+      ],
+      "stars": 0,
+      "views_14d": {
+        "count": 104,
+        "uniques": 2
       }
     }
   }
