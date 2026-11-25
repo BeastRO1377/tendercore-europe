@@ -1,20 +1,21 @@
 # TenderCore Europe — GitHub Traffic History
 
-Latest snapshot: **2026-11-24** (UTC). Reporting interval: **2026-10-26–2026-11-24**.
+Latest snapshot: **2026-11-25** (UTC). Reporting interval: **2026-10-27–2026-11-25**.
 
-- Recorded page views over 30 calendar days: **104**.
-- Recorded full clones over 30 calendar days: **152**.
-- Days with traffic observations: **15** (missing dates are not zero).
-- Peak clone day: **2026-11-23** with **71** clones.
-- Latest rolling 14-day unique visitors: **1**.
-- Latest rolling 14-day unique cloners: **42**.
+- Recorded page views over 30 calendar days: **114**.
+- Recorded full clones over 30 calendar days: **240**.
+- Days with traffic observations: **16** (missing dates are not zero).
+- Peak clone day: **2026-11-24** with **88** clones.
+- Latest rolling 14-day unique visitors: **2**.
+- Latest rolling 14-day unique cloners: **81**.
 - Repository stars at snapshot: **0**; forks: **0**.
 
 ## Observations by UTC day
 
 | Date | Views | Daily unique visitors | Full clones | Daily unique cloners | Other Actions runs |
 |---|---:|---:|---:|---:|---:|
-| 2026-11-24 | — | — | — | — | 0 |
+| 2026-11-25 | — | — | — | — | 0 |
+| 2026-11-24 | 10 | 2 | 88 | 42 | 0 |
 | 2026-11-23 | 14 | 1 | 71 | 16 | 12 |
 | 2026-11-22 | 0 | 0 | 14 | 8 | 0 |
 | 2026-11-21 | 20 | 1 | 2 | 2 | 0 |
@@ -35,7 +36,7 @@ Latest snapshot: **2026-11-24** (UTC). Reporting interval: **2026-10-26–2026-1
 
 | Referrer | Views | Unique visitors |
 |---|---:|---:|
-| github.com | 21 | 1 |
+| github.com | 18 | 1 |
 
 ## Interpretation and limitations
 
