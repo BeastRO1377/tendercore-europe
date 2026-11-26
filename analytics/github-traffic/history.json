@@ -111,6 +111,13 @@
       "workflow_runs": 0
     },
     "2026-11-25": {
+      "clones": 19,
+      "unique_cloners": 10,
+      "unique_visitors": 0,
+      "views": 0,
+      "workflow_runs": 0
+    },
+    "2026-11-26": {
       "workflow_runs": 0
     }
   },
@@ -364,6 +371,88 @@
       "stars": 0,
       "views_14d": {
         "count": 104,
+        "uniques": 2
+      }
+    },
+    "2026-11-26": {
+      "captured_at_utc": "2026-11-26T12:36:52Z",
+      "clones_14d": {
+        "count": 259,
+        "uniques": 89
+      },
+      "forks": 0,
+      "popular_paths_14d": [
+        {
+          "count": 24,
+          "path": "/BeastRO1377/tendercore-europe",
+          "title": "Overview",
+          "uniques": 2
+        },
+        {
+          "count": 11,
+          "path": "/BeastRO1377/tendercore-europe/pulse",
+          "title": "/pulse",
+          "uniques": 1
+        },
+        {
+          "count": 9,
+          "path": "/BeastRO1377/tendercore-europe/graphs/traffic",
+          "title": "/graphs/traffic",
+          "uniques": 1
+        },
+        {
+          "count": 6,
+          "path": "/BeastRO1377/tendercore-europe/community",
+          "title": "/community",
+          "uniques": 1
+        },
+        {
+          "count": 4,
+          "path": "/BeastRO1377/tendercore-europe/graphs/contributors",
+          "title": "/graphs/contributors",
+          "uniques": 1
+        },
+        {
+          "count": 3,
+          "path": "/BeastRO1377/tendercore-europe/actions/metrics/usage",
+          "title": "/actions/metrics/usage",
+          "uniques": 1
+        },
+        {
+          "count": 3,
+          "path": "/BeastRO1377/tendercore-europe/actions/runs/45406567431",
+          "title": "/actions/runs/45406567431",
+          "uniques": 1
+        },
+        {
+          "count": 3,
+          "path": "/BeastRO1377/tendercore-europe/graphs/community",
+          "title": "/graphs/community",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/BeastRO1377/tendercore-europe/actions/metrics/performance",
+          "title": "/actions/metrics/performance",
+          "uniques": 1
+        },
+        {
+          "count": 2,
+          "path": "/BeastRO1377/tendercore-europe/actions/runs/45406567431/job/138488781675",
+          "title": "/actions/runs/45406567431/job/138488781675",
+          "uniques": 1
+        }
+      ],
+      "referrers_14d": [
+        {
+          "count": 16,
+          "referrer": "github.com",
+          "uniques": 1
+        }
+      ],
+      "stars": 0,
+      "views_14d": {
+        "count": 89,
         "uniques": 2
       }
     }
