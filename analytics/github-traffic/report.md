@@ -1,10 +1,10 @@
 # TenderCore Europe — GitHub Traffic History
 
-Latest snapshot: **2026-11-26** (UTC). Reporting interval: **2026-10-28–2026-11-26**.
+Latest snapshot: **2026-11-27** (UTC). Reporting interval: **2026-10-29–2026-11-27**.
 
-- Recorded page views over 30 calendar days: **114**.
-- Recorded full clones over 30 calendar days: **259**.
-- Days with traffic observations: **17** (missing dates are not zero).
+- Recorded page views over 30 calendar days: **118**.
+- Recorded full clones over 30 calendar days: **261**.
+- Days with traffic observations: **18** (missing dates are not zero).
 - Peak clone day: **2026-11-24** with **88** clones.
 - Latest rolling 14-day unique visitors: **2**.
 - Latest rolling 14-day unique cloners: **89**.
@@ -14,7 +14,8 @@ Latest snapshot: **2026-11-26** (UTC). Reporting interval: **2026-10-28–2026-1
 
 | Date | Views | Daily unique visitors | Full clones | Daily unique cloners | Other Actions runs |
 |---|---:|---:|---:|---:|---:|
-| 2026-11-26 | — | — | — | — | 0 |
+| 2026-11-27 | — | — | — | — | 0 |
+| 2026-11-26 | 4 | 1 | 2 | 2 | 0 |
 | 2026-11-25 | 0 | 0 | 19 | 10 | 0 |
 | 2026-11-24 | 10 | 2 | 88 | 42 | 0 |
 | 2026-11-23 | 14 | 1 | 71 | 16 | 12 |
@@ -37,7 +38,7 @@ Latest snapshot: **2026-11-26** (UTC). Reporting interval: **2026-10-28–2026-1
 
 | Referrer | Views | Unique visitors |
 |---|---:|---:|
-| github.com | 16 | 1 |
+| github.com | 17 | 1 |
 
 ## Interpretation and limitations
 
